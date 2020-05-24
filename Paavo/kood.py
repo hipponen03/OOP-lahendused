@@ -1,10 +1,39 @@
 print("Tere, Paavo!")
+
+
+
+
+b = input("Kas soovid lisada vinüülplaatide nimekirja albumit? jah/ei ")
+
+if b == "jah":
+    seis = "aktiivne"
+    grupp = input("Sisestage esitaja nimi: ")
+    album = input("Sisestage albumi nimi: ")
+    aasta = input("Sisestage aasta: ")
+    while seis == "aktiivne":
+        
+        laul = input("Sisestage laulu pealkiri:")
+        laulupealkiri = grupp+ "\t" + album + "\t" + aasta + "\t" + laul
+        fail = open("albumid.txt", "a")
+        fail.write("\n" + laulupealkiri)
+        
+        
+        b = input("Kas soovite veel laule lisada? jah/ei ")
+        if b == "jah":
+            seis = "aktiivne"
+        else:
+            seis = "inaktiivne"
+            fail.close()
+        
+    
+else:
+ pass
+
+
 y = input("Kas soovid näha vinüülplaatide nimekirja? jah/ei ")
 
 fail = open("albumid.txt", encoding="UTF-8")
-
 albumid = []
-
 def Albumite_kriipsud():
     for rida in fail:
         elemendid = rida.split("\t")
