@@ -49,7 +49,6 @@ if mitmesDemo == 1:
             laulupealkiri = grupp.title() + "\t" + album.title() + "\t" + aasta + "\t" + laul.title()
             fail = open("albumid.txt", "a", encoding="UTF-8")
             fail.write("\n" + laulupealkiri)
-        
             print("Kas soovite veel laule lisada? jah/ei \033[96mjah\033[0m")
             input("Vajutage sisestusklahvi, et demos edasi liikuda.")
             laul = "Jätke võtmed väljapoole"
@@ -66,28 +65,22 @@ if mitmesDemo == 1:
 
     y = "ei"
     print("Kas soovid näha vinüülplaatide nimekirja? jah/ei \033[96mei\033[0m")
-
     input("Vajutage sisestusklahvi, et demos edasi liikuda.")
-
     fail = open("albumid.txt", encoding="UTF-8")
     albumid = []
 
 
     if y == "jah":
-        
         albumiteKriipsud()
     
     else:
         w = "jah"
         print("Kas soovid otsida laulu? jah/ei \033[96mjah\033[0m")
         input("Vajutage sisestusklahvi, et demos edasi liikuda.")
-
         if w == "jah":
-
             for rida in fail:
                 albumid.append(rida)
     
-
             nimi = "Alice Cooper"
             print("Sisesta albumi või artisti nimi: \033[96mAlice Cooper\033[0m")
             input("Vajutage sisestusklahvi, et demos edasi liikuda.")
@@ -95,28 +88,23 @@ if mitmesDemo == 1:
 
             for str in albumid:
                 if x in str:
-                    print(str)
-                
+                    print(str)  
         else:
             print("Ei soovinud midagi!")
-
     fail.close()
 
 else:
     print("Kas soovid lisada vinüülplaatide nimekirja albumit? jah/ei \033[96mjah\033[0m")
     input("Vajutage sisestusklahvi, et demos edasi liikuda.")    
-
-
-    y = "jah"
     print("Kas soovid näha vinüülplaatide nimekirja? jah/ei \033[96mei\033[0m")
 
     input("Vajutage sisestusklahvi, et demos edasi liikuda.")
 
     fail = open("albumid.txt", encoding="UTF-8")
     albumid = []
+    y = "jah"
 
     if y == "jah":
-        
         albumiteKriipsud()
         
     fail.close()
