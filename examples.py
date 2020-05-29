@@ -97,7 +97,6 @@ else:
     print("Kas soovid lisada vinüülplaatide nimekirja albumit? jah/ei \033[96mjah\033[0m")
     input("Vajutage sisestusklahvi, et demos edasi liikuda.")    
     print("Kas soovid näha vinüülplaatide nimekirja? jah/ei \033[96mei\033[0m")
-
     input("Vajutage sisestusklahvi, et demos edasi liikuda.")
 
     fail = open("albumid.txt", encoding="UTF-8")
