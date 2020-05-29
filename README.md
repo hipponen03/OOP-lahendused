@@ -24,6 +24,6 @@ Programmi kasutamine on väga kerge. ✔️
 ---
 
 ## Projekti arendajad 🛠️
-- Henry-Gerret Grüning / [GITHUB](https://github.com/HenryGerretGruning/OOPLahendused/tree/master/PaavoProject "Henry-Gerret Grüning Github") 
+- Henry-Gerret Grüning / [GITHUB](https://github.com/HenryGerretGruning/OOPLahendused/tree/master/ "Henry-Gerret Grüning Github") 
 - Anette Aguraiuja / [GITHUB](https://github.com/AnetteAgura/parimad_praktikad "Anette Aguraiuja Github") 
-- Markkus Hipponen / [GITHUB](https://github.com/hipponen03/OOP-lahendused/tree/master/Paavo "Markus Hipponen Github") 
+- Markkus Hipponen / [GITHUB](https://github.com/hipponen03/parimad_praktikad "Markus Hipponen Github") 
