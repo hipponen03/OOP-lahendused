@@ -38,7 +38,7 @@ if b == "jah":
         laul = input("Sisestage laulu pealkiri:")
         # Liidab kokku esitaja, albumi, aasta ning laulu. Vahel on tabulutsioon.
         laulupealkiri = grupp.title() + "\t" + album.title() + "\t" + aasta + "\t" + laul.title()
-        fail = open("albumid.txt", "a")
+        fail = open("albumid.txt", "a", encoding="UTF-8")
         # Lisab nimekirja uue plaadi andmed.
         fail.write("\n" + laulupealkiri)
         
